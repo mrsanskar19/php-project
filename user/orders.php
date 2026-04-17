@@ -51,7 +51,7 @@ include '../components/header.php';
         <a href="index.php" class="btn btn-light text-start">👤 Profile</a>
         <a href="user/orders.php" class="btn btn-light text-start">📦 Orders</a>
         <a href="../cart.php" class="btn btn-light text-start">🛒 Cart</a>
-        <a href="logout.php" class="btn btn-danger text-start">🚪 Logout</a>
+        <a href="user/logout.php" class="btn btn-danger text-start">🚪 Logout</a>
     </div>
 
 </div>

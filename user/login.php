@@ -28,6 +28,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             'is_logged_in' => true
         ];
 
+        if($user['role'] === 'admin' || $user['email' === 'mr.sanskar19@gmail.com']){
+            header("Location: ../admin/index.php");
+            exit;
+        }
         header("Location: index.php");
         exit;
 

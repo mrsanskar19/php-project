@@ -99,7 +99,6 @@ foreach ($pending['cart'] as $item) {
 
 
 unset($_SESSION['pending_order']);
-unset($_SESSION['cart']);
 include "components/header.php"
 ?>
 
@@ -162,7 +161,7 @@ include "components/header.php"
             Continue Shopping
         </a>
 
-        <a href="orders.php" class="btn btn-primary px-4 py-2 rounded-pill">
+        <a href="user/orders.php" class="btn btn-primary px-4 py-2 rounded-pill">
             View Orders
         </a>
 
@@ -172,10 +171,10 @@ include "components/header.php"
 
 
 </div>
+<script>
 
-
+    clearCart();
+</script>
 <?php
 include "components/footer.php";
-unset($_SESSION['cart']);
-unset($_SESSION['pending_order']);
 ?>
